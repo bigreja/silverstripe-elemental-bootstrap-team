@@ -3,11 +3,12 @@
 namespace bigreja\SilverStripeElementalBootstrapStaffSection\Model;
 
 use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\AssetAdmin\Forms\UploadField;
-use bigreja\SilverStripeElementalBaseitems\Model\BaseItem;
+use syntro\SilverStripeElementalBaseitems\Model\BaseItem;
 use bigreja\SilverStripeElementalBootstrapStaffSection\Elements\StaffSection;
 
 /**
