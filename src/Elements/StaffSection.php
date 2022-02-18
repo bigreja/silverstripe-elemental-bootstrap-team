@@ -1,6 +1,6 @@
 <?php
 
-namespace Syntro\SilverStripeElementalBootstrapStaffSection\Elements;
+namespace bigreja\SilverStripeElementalBootstrapStaffSection\Elements;
 
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\ORM\FieldType\DBField;
@@ -11,7 +11,7 @@ use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 use DNADesign\Elemental\Models\BaseElement;
-use Syntro\SilverStripeElementalBootstrapStaffSection\Model\StaffMember;
+use bigreja\SilverStripeElementalBootstrapStaffSection\Model\StaffMember;
 
 /**
  *  Bootstrap based Staff section

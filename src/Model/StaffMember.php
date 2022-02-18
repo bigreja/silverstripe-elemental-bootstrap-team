@@ -1,14 +1,14 @@
 <?php
 
-namespace Syntro\SilverStripeElementalBootstrapStaffSection\Model;
+namespace bigreja\SilverStripeElementalBootstrapStaffSection\Model;
 
 use SilverStripe\Forms\TextField;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\AssetAdmin\Forms\UploadField;
-use Syntro\SilverStripeElementalBaseitems\Model\BaseItem;
-use Syntro\SilverStripeElementalBootstrapStaffSection\Elements\StaffSection;
+use bigreja\SilverStripeElementalBaseitems\Model\BaseItem;
+use bigreja\SilverStripeElementalBootstrapStaffSection\Elements\StaffSection;
 
 /**
  * StaffMember
