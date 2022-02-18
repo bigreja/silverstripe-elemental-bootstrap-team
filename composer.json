@@ -1,6 +1,6 @@
 {
-    "name": "syntro/silverstripe-elemental-bootstrap-staffsection",
-    "description": "A bootsttrap based staff section",
+    "name": "bigreja/silverstripe-elemental-bootstrap-team",
+    "description": "A bootsttrap based team section",
     "type": "silverstripe-vendormodule",
     "keywords": [
         "silverstripe",
@@ -35,8 +35,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Syntro\\SilverStripeElementalBootstrapStaffSection\\": "src/",
-            "Syntro\\SilverStripeElementalBootstrapStaffSection\\Tests\\": "tests/"
+            "bigreja\\SilverStripeElementalBootstrapTeamSection\\": "src/",
+            "bigreja\\SilverStripeElementalBootstrapTeamSection\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",

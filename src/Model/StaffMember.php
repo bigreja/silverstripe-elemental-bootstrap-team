@@ -28,7 +28,9 @@ class StaffMember extends BaseItem
     private static $db = [
         'Sort' => 'Int',
         'Position' => 'Varchar(255)',
-        'Description' => 'Text',
+        'ORCID' => 'Varchar(50)',
+        'Contact' => 'Varchar(255)',
+        'Content' => 'HTMLText',
 
     ];
 
@@ -72,7 +74,9 @@ class StaffMember extends BaseItem
         $labels['Image'] = _t(__CLASS__ . '.IMAGE', 'Image');
         $labels['Title'] = _t(__CLASS__ . '.TITLE', 'Name');
         $labels['Position'] = _t(__CLASS__ . '.POSITION', 'Position');
-        $labels['Description'] = _t(__CLASS__ . '.DESCRIPTION', 'Description');
+        $labels['Contact'] = _t(__CLASS__ . '.CONTACT', 'Contact');
+        $labels['Content'] = _t(__CLASS__ . '.CONTENT', 'Content');
+        $labels['ORCID'] = _t(__CLASS__ . '.ORCID', 'ORCID');
         return $labels;
     }
 
@@ -111,6 +115,32 @@ class StaffMember extends BaseItem
                 'Position'
             );
             $imageField->setFolderName('Uploads/StaffMembers');
+
+            $fields->addFieldToTab(
+                'Root.Main',
+                TextField::create(
+                    'Contact',
+                    $this->fieldLabel('Contact')
+                ),
+                'Contact'
+            );
+            $fields->addFieldToTab(
+                'Root.Main',
+                TextField::create(
+                    'ORCID',
+                    $this->fieldLabel('ORCID')
+                ),
+                'ORCID'
+            );
+            $fields->addFieldToTab(
+                'Root.Main',
+                HTMLEditorField::create(
+                    'Content',
+                    $this->fieldLabel('Content')
+                ),
+                'Content'
+            );
+
         });
 
         return parent::getCMSFields();
